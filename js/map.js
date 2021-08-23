@@ -8,6 +8,7 @@ Name: Customized Google Map
 
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
+		// Please add your center map latitude and longitude
 		center: {
 			lat: 37.774929,
 			lng: -122.419418,
@@ -20,6 +21,7 @@ function initMap() {
 	const markers = [
 		[
 			'Location One',
+			// Please add your map pin latitude and longitude
 			37.791012,
 			-122.402100,
 			`<div id="mapWindowContent">
@@ -68,6 +70,7 @@ function initMap() {
 		],
 		[
 			'Location Two',
+			// Please add your map pin latitude and longitude
 			37.765251,
 			-122.435959,
 			`<div id="mapWindowContent">
@@ -114,6 +117,7 @@ function initMap() {
 		],
 		[
 			'Location Three',
+			// Please add your map pin latitude and longitude
 			37.776272,
 			-122.484917,
 			`<div id="mapWindowContent">
