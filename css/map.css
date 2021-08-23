@@ -1,0 +1,191 @@
+/*  
+Project Name: Customized Google Map
+Description: Customized Google Map with detailed info window. Give me a thumbs-up, If you like it. Enjoy!
+Author: Abdul Samad
+Author URI: https://getabdulsamad.com/
+Name: Customized Google Map
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap');
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+#map {
+  height: 100%;
+  min-height: 880px;
+}
+#mapWindowContent {
+      font-family: 'Mulish', sans-serif;
+}
+#mapWindowContent .firstHeading h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0;
+}
+#mapWindowContent .bodyContent .vcAddress {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  line-height: 22px;
+  max-width: 100%;
+  width: 100%;
+}
+#mapWindowContent .vcBusinessHoursDays {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: left;
+  -moz-justify-content: left;
+  justify-content: left;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-gap: 30px;
+  -moz-gap: 30px;
+  gap: 30px;
+}
+#mapWindowContent .vcBusinessHoursDays .vcBusinessDays {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+}
+#mapWindowContent .vcBusinessHoursDays .vcBusinessHours {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+}
+.vcBusinessHoursDays:last-of-type {
+  margin-bottom: 30px;
+}
+#mapWindowContent span {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+#mapWindowContent .bodyContent .mapImages {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-gap: 15px;
+  -moz-gap: 15px;
+  gap: 15px;
+  position: relative;
+  line-height: 0;
+}
+#mapWindowContent .bodyContent .mapImages .mapImage {
+  position: relative;
+}
+#mapWindowContent .bodyContent .mapImages .mapImage img {
+  max-width: 100%;
+  min-height: 68px;
+}
+#mapWindowContent .bodyContent .mapImages .mapImage:last-child::after {
+    content: '';
+    : ;
+    background: #00000080;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+#mapWindowContent .bodyContent .mapImages .mapImage:last-child > .mapImagePagi {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+} 
+#mapWindowContent
+  .bodyContent
+  .mapImages
+  .mapImage:last-child
+  > .mapImagePagi
+  a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+#mapWindowContent
+  .bodyContent
+  .mapImages
+  .mapImage:last-child
+  > .mapImagePagi
+  a:hover {
+  text-decoration: none;
+  opacity: 90%;
+  outline: none;
+}
+#mapWindowContent
+  .bodyContent
+  .mapImages
+  .mapImage:last-child
+  > .mapImagePagi
+  a:focus {
+  text-decoration: none;
+  opacity: 90%;
+  outline: none;
+}
+.mapImagePagi a {
+  outline: none;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.mapImagePagi a:hover {
+  opacity: 0.9;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+}
+.mapImagePagi a:active {
+  outline: none;
+  border: 0;
+  text-decoration: none;
+}
+.mapImagePagi a:focus {
+  outline: none;
+  border: 0;
+  text-decoration: none;
+} 
+.gm-style .gm-style-iw-c {
+  border-radius: 0;
+  padding: 20px;
+  max-width: 450px !important;
+  width: 100%;
+}
+.gm-ui-hover-effect {
+  opacity: 0.6;
+  width: 100% !important;
+  max-width: 60px;
+  height: 60px !important;
+  top: 0 !important;
+  right: 0 !important;
+  background: url(/icons/close-icon.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  opacity: 1 !important;
+}
+.gm-ui-hover-effect img {
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0 !important;
+  visibility: hidden;
+}
